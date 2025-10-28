@@ -1,0 +1,128 @@
+.footer {
+  margin: 50px 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-top-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-top-left img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.footer-top-left p {
+  max-width: 400px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.footer-top-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-email-input {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  border-radius: 50px;
+  background-color: #32323b;
+  transition: border 0.3s ease;
+}
+
+.footer-email-input input {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #A0A0A0;
+  font-size: 18px;
+  width: 180px;
+}
+
+.footer-email-input:hover {
+  border: 2px solid white;
+}
+
+.footer-subscribe {
+  font-size: 18px;
+  padding: 18px 40px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #00C9A7 -5.09%, #0072FF 106.28%);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: white;
+}
+
+.footer-subscribe:hover {
+  transform: scale(1.05);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #555;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 16px;
+  align-items: center;
+}
+
+.footer-bottom-left {
+  margin-top: 10px;
+}
+
+.footer-bottom-right {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin: 40px 30px;
+    text-align: center;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-top-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-top-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}

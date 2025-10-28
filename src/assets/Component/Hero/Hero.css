@@ -1,0 +1,110 @@
+.hero{
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+
+.hero img{
+    margin-top: 100px;
+    width: 250px;
+    height: 350px;
+    border-radius: 50%;
+    /* transition: transform 0.5s ease-in-out; */
+}
+.hero img:hover {
+    animation: flipCard 0.3s ease-in-out forwards;
+}
+
+@keyframes flipCard {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(30deg);
+    }
+}
+.hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 85px;
+    font-weight: 600;
+}
+.hero h1 span{
+    background: linear-gradient(270deg, #00C9A7, #0072FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero p{
+    text-align: center;
+    width: 50%;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 38px;
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+.hero-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #00C9A7 -5.09%, #0072FF 106.28%);
+    cursor: pointer;
+}
+.hero-resume{
+    padding: 25px 75px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor:pointer;
+}
+.hero-connect:hover{
+    /* transform: scale(1.05); */
+    /* box-shadow: 0 0 15px #00C9A7; */
+    border: 2px solid white;
+}
+.hero-resume:hover{
+    border-color: #00C9A7;
+    
+}
+@media (max-width : 768px){
+.hero img {
+    margin-top: 120px;
+    width: 260px;
+
+}
+.hero h1{
+    margin-top: 50px;
+    width:  90%;
+    font-size: 50px;
+    
+}
+.hero p{
+    width: 60% ;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 10px 0px;
+}
+.hero-action {
+    gap: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.hero-connect{
+padding: 20px 30px ;
+border-radius: 40px;
+}
+
+}
+.hero-resume{
+  padding: 20px 50px; 
+  border-radius: 40px; 
+}
